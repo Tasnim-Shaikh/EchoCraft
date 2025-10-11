@@ -2,9 +2,11 @@
   "name": "ai-podcast-frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "dependencies": {
     "axios": "^1.12.2",
     "firebase": "^12.3.0",
