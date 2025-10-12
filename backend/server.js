@@ -163,7 +163,9 @@ app.post("/generateAudio", async (req, res) => {
     segments.forEach(f => fs.unlinkSync(f));
 
     // Return merged audio URL
-    res.json({ audioUrl: `http://localhost:${PORT}/${path.basename(outputFile)}` });
+  //  res.json({ audioUrl: `http://localhost:${PORT}/${path.basename(outputFile)}` });
+      const baseUrl = process.env.REACT_APP_API_URL || `http://localhost:${PORT}`;
+res.json({ audioUrl: `${baseUrl}/${path.basename(outputFile)}` });
 
   } catch (err) {
     console.error("❌ Error generating audio:", err.response?.data || err.message);
