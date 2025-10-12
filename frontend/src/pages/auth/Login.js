@@ -81,17 +81,7 @@ const Login = () => {
             </button>
           </form>
 
-          {/* Separator */}
-          <div className="flex items-center my-6">
-            <hr className="flex-grow border-gray-300" />
-            <span className="mx-4 text-gray-400 text-sm">or continue with</span>
-            <hr className="flex-grow border-gray-300" />
-          </div>
-
-          {/* Google Button */}
-          <button onClick={handleGoogleLogin} className="w-full flex items-center justify-center gap-2 border border-gray-300 py-3 rounded-lg font-semibold hover:bg-gray-50 transition">
-            <FaGoogle className="text-red-500" /> Continue with Google
-          </button>
+    
           
           {/* Sign Up Link */}
           <p className="text-center text-sm text-gray-500 mt-6">
